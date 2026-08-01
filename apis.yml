@@ -1,7 +1,23 @@
 aid: raw-apothecary
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/raw-apothecary.png
 name: Raw Apothecary
-description: Raw Apothecary is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Raw Apothecary is a Mexico-based consumer brand that operated a Shopify storefront at
+  rawapothecary.mx (Spanish-language, powered-by Shopify), surfaced in the API Evangelist network as a
+  500 Global portfolio company. As of this enrichment pass the storefront returns "Tienda no disponible"
+  (HTTP 402, "Store Unavailable"), and the company publishes no public API, developer portal, documentation,
+  or machine-readable specification surface. This profile is retained as a company record; there is no API
+  to enrich beyond a live domain-security probe of the storefront host.
 url: https://raw.githubusercontent.com/api-evangelist/raw-apothecary/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- E-Commerce
+- Retail
+- Consumer
+- Shopify
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/raw-apothecary-domain-security.yml
 - type: Website
   url: https://rawapothecary.mx
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 1
+  pass: local-v1
